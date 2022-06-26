@@ -1,40 +1,40 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Link from 'next/link';
 import Cart from '../cart/Cart';
 import commerce from '../../lib/commerce';
 import Animation from '../cart/Animation';
-import { Transition } from 'react-transition-group';
-import { connect } from 'react-redux'
-import { clearCustomer } from '../../store/actions/authenticateActions';
+import {Transition} from 'react-transition-group';
+import {connect} from 'react-redux';
+import {clearCustomer} from '../../store/actions/authenticateActions';
 
 const duration = 300;
 
 const defaultStyle = {
   zIndex: '-1',
   transition: `height ${duration}ms ease-in-out`,
-  height: 0
+  height: 0,
 };
 
 const transitionStyles = {
-  entering: { height: '100vh' },
-  entered: { height: '100vh' },
-  exiting: { height: 0 },
-  exited: { height: 0 }
+  entering: {height: '100vh'},
+  entered: {height: '100vh'},
+  exiting: {height: 0},
+  exited: {height: 0},
 };
 
 const mobileMenuLinks = [
   {
     name: 'Home',
-    link: '/'
+    link: '/',
   },
   {
     name: 'Shop',
-    link: '/collection'
+    link: '/collection',
   },
   {
     name: 'About',
-    link: '/about'
-  }
+    link: '/about',
+  },
 ];
 
 class Header extends Component {
@@ -61,7 +61,10 @@ class Header extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-    window.addEventListener('Commercejs.Cart.Item.Added', this.handleAddToCartToggle);
+    window.addEventListener(
+      'Commercejs.Cart.Item.Added',
+      this.handleAddToCartToggle
+    );
 
     this.setState({
       loggedIn: commerce.customer.isLoggedIn(),
@@ -70,11 +73,14 @@ class Header extends Component {
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
-    window.removeEventListener('Commercejs.Cart.Item.Added', this.handleAddToCartToggle);
+    window.removeEventListener(
+      'Commercejs.Cart.Item.Added',
+      this.handleAddToCartToggle
+    );
   }
 
   toggleCart() {
-    const { showCart } = this.state;
+    const {showCart} = this.state;
     this.setState({
       showCart: !showCart,
     });
@@ -92,9 +98,11 @@ class Header extends Component {
   }
 
   animate() {
-    const { transparent } = this.props;
+    const {transparent} = this.props;
 
-    if (!transparent) {return;}
+    if (!transparent) {
+      return;
+    }
 
     if (window.scrollY > 10) {
       this.header.current.classList.add('invert');
@@ -104,8 +112,8 @@ class Header extends Component {
   }
 
   toggleMobileMenu() {
-    const { showMobileMenu } = this.state;
-    this.setState({ showMobileMenu: !showMobileMenu });
+    const {showMobileMenu} = this.state;
+    this.setState({showMobileMenu: !showMobileMenu});
 
     if (!showMobileMenu) {
       this.header.current.classList.add('invert');
@@ -118,9 +126,9 @@ class Header extends Component {
    * Toggle add to cart animation to true
    */
   toggleAddToCartAnimation() {
-    const { playAddToCartAnimation } = this.state;
+    const {playAddToCartAnimation} = this.state;
 
-    this.setState({ playAddToCartAnimation: !playAddToCartAnimation });
+    this.setState({playAddToCartAnimation: !playAddToCartAnimation});
   }
 
   /**
@@ -130,29 +138,27 @@ class Header extends Component {
     this.toggleAddToCartAnimation();
     setTimeout(() => {
       this.toggleAddToCartAnimation();
-    }, 3000)
+    }, 3000);
   }
 
   renderLoginLogout() {
-    const { customer } = this.props;
-    const { loggedIn } = this.state;
+    const {customer} = this.props;
+    const {loggedIn} = this.state;
 
     if (loggedIn) {
       return (
-        <div className="d-flex align-items-center">
-          { customer && customer.firstname && (
-            <span className="mr-2 font-weight-regular">
-              Hi, { customer.firstname }!
+        <div className='d-flex align-items-center'>
+          {customer && customer.firstname && (
+            <span className='mr-2 font-weight-regular'>
+              Hi, {customer.firstname}!
             </span>
-          ) }
-          <Link href="/account">
-            <a className="font-color-black mx-2">
-              My account
-            </a>
+          )}
+          <Link href='/account'>
+            <a className='font-color-black mx-2'>My account</a>
           </Link>
           <button
-            className="bg-transparent mr-2 font-color-black font-weight-semibold"
-            type="button"
+            className='bg-transparent mr-2 font-color-black font-weight-semibold'
+            type='button'
             onClick={this.handleLogout}
           >
             Logout
@@ -161,61 +167,55 @@ class Header extends Component {
       );
     }
 
-    return (
-      <Link href="/login">
-        <a className="font-color-black login">
-          Login
-        </a>
-      </Link>
-    );
+    return;
   }
 
   render() {
-    const { showMobileMenu, showCart } = this.state;
-    const { transparent, cart } = this.props;
+    const {showMobileMenu, showCart} = this.state;
+    const {transparent, cart} = this.props;
 
     return (
-      <header className="position-fixed top-0 left-0 right-0 font-weight-semibold no-print">
-        <Cart isOpen={showCart} toggle={value => this.toggleCart(value)} />
+      <header className='position-fixed top-0 left-0 right-0 font-weight-semibold no-print'>
+        <Cart isOpen={showCart} toggle={(value) => this.toggleCart(value)} />
         <div
           ref={this.header}
           className={`d-flex header align-items-center justify-content-between position-relative ${
             transparent ? '' : 'invert'
           }`}
         >
-          <div className="d-none d-sm-flex">
-            <Link href="/collection">
-              <a className="mr-4 font-color-black">Shop</a>
+          <div className='d-none d-sm-flex'>
+            <Link href='/collection'>
+              <a className='mr-4 font-color-black'>Shop</a>
             </Link>
-            <Link href="/about">
-              <a className="font-color-black">About</a>
+            <Link href='/about'>
+              <a className='font-color-black'>About</a>
             </Link>
           </div>
-          <div className="logo-container">
+          <div className='logo-container'>
             <img
               src={`/icon/${showMobileMenu ? 'cross' : 'menu'}.svg`}
               onClick={this.toggleMobileMenu}
-              className="w-32 mr-1 d-block d-sm-none"
-              alt="Menu icon"
+              className='w-32 mr-1 d-block d-sm-none'
+              alt='Menu icon'
             />
-            <Link href="/">
+            <Link href='/'>
               <a>
                 <img
-                  src="/images/commerce.svg"
-                  className="logo cursor-pointer"
-                  alt="Logo"
+                  src='/images/commerce.svg'
+                  className='logo cursor-pointer'
+                  alt='Logo'
                 />
               </a>
             </Link>
           </div>
-          <div className="d-flex">
-            { process.browser && this.renderLoginLogout() }
+          <div className='d-flex'>
+            {process.browser && this.renderLoginLogout()}
             <div
-              className="position-relative cursor-pointer"
+              className='position-relative cursor-pointer'
               onClick={this.toggleCart}
             >
-              <Animation isStopped={ this.state.playAddToCartAnimation } />
-              <div className="cart-count position-absolute font-size-tiny font-weight-bold">
+              <Animation isStopped={this.state.playAddToCartAnimation} />
+              <div className='cart-count position-absolute font-size-tiny font-weight-bold'>
                 {cart.total_items}
               </div>
             </div>
@@ -224,26 +224,26 @@ class Header extends Component {
 
         {/* Mobile Menu */}
         <Transition in={showMobileMenu} timeout={duration}>
-          {state => (
+          {(state) => (
             <div
-              className="d-sm-none position-fixed left-0 right-0 overflow-hidden"
+              className='d-sm-none position-fixed left-0 right-0 overflow-hidden'
               style={{
                 ...defaultStyle,
                 ...transitionStyles[state],
                 // Prevent gap being shown at bottom of mobile menu
-                top: '1em'
+                top: '1em',
               }}
             >
               <div
-                className="position-absolute left-0 right-0 h-100vh mobile-menu-inner bg-black700 d-flex flex-column justify-content-center"
+                className='position-absolute left-0 right-0 h-100vh mobile-menu-inner bg-black700 d-flex flex-column justify-content-center'
                 style={{
                   // Prevent mobile menu items (e.g. Home) being hidden behind navbar on small screen heights (e.g. iPhone4 landscape of 320px height)
-                  top: '4em'
+                  top: '4em',
                 }}
               >
                 {mobileMenuLinks.map((item, i) => (
                   <Link key={i} href={item.link}>
-                    <a className="d-block mb-4 font-size-heading font-color-white text-center">
+                    <a className='d-block mb-4 font-size-heading font-color-white text-center'>
                       {item.name}
                     </a>
                   </Link>
@@ -257,7 +257,4 @@ class Header extends Component {
   }
 }
 
-export default connect(
-  state => state,
-  { clearCustomer },
-)(Header);
+export default connect((state) => state, {clearCustomer})(Header);

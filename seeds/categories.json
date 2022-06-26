@@ -1,23 +1,23 @@
 [
   {
-    "slug": "facial-products",
-    "name": "Facial Products",
+    "slug": "pakaian-wanita",
+    "name": "Pakaian Wanita",
     "meta": {
-      "image": "/images/collection/1.png"
+      "image": "/images/collection/1.jpg"
     }
   },
   {
-    "slug": "hair-products",
-    "name": "Hair Products",
+    "slug": "pakaian-pria",
+    "name": "Pakaian Pria",
     "meta": {
-      "image": "/images/collection/2.png"
+      "image": "/images/collection/2.jpeg"
     }
   },
   {
-    "slug": "body-products",
-    "name": "Body Products",
+    "slug": "aksesoris-pria",
+    "name": "Aksesoris Pria",
     "meta": {
-      "image": "/images/collection/3.png"
+      "image": "/images/collection/3.jpg"
     }
   }
 ]

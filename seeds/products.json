@@ -1,78 +1,9 @@
 [
   {
     "product": {
-      "name": "Face & Body Roller",
-      "description": "Enrich your morning and evening beauty ritual and to help reduce the appearance of puffiness and wrinkles",
-      "price": "18.00",
-      "category_id": "categories[2].id"
-    },
-    "variant": [
-      {
-        "name": "Size",
-        "options": [
-          {
-            "description": "200ml",
-            "price": "0.00"
-          },
-          {
-            "description": "500ml",
-            "price": "34.00"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "product": {
-      "name": "Cure Scrub Kit",
-      "description": "Cleanse and rejuvenate your skin with bamboo bristle scrubbing brushes.",
-      "price": "51.00",
-      "category_id": "categories[2].id"
-    },
-    "variant": [
-      {
-        "name": "Size",
-        "options": [
-          {
-            "description": "100ml kit",
-            "price": "0.00"
-          },
-          {
-            "description": "500ml kit",
-            "price": "100.00"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "product": {
-      "name": "Molecule Body Oil",
-      "description": "For a silky smooth finish, the Molecule Body Oil is a perfect addition for your post shower treatment.",
-      "price": "23.00",
-      "category_id": "categories[2].id"
-    },
-    "variant": [
-      {
-        "name": "Size",
-        "options": [
-          {
-            "description": "100ml",
-            "price": "0.00"
-          },
-          {
-            "description": "500ml",
-            "price": "40.00"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "product": {
-      "name": "Lip Fantastic",
-      "description": "A limited-edition, nourishing lip gel to top off your look and feel fantastic.",
-      "price": "24.00",
+      "name": "WOMEN T-Shirt Crop Square Neck Lengan Pendek",
+      "description": "T-shirt Wanita dengan panjang crop yang stylish. Sempurna untuk layering.",
+      "price": "149000",
       "category_id": "categories[0].id"
     },
     "variant": [
@@ -80,12 +11,28 @@
         "name": "Size",
         "options": [
           {
-            "description": "30ml",
-            "price": "0.00"
+            "description": "XS",
+            "price": "0"
           },
           {
-            "description": "50ml",
-            "price": "35.00"
+            "description": "S",
+            "price": "10000"
+          },
+          {
+            "description": "M",
+            "price": "15000"
+          },
+          {
+            "description": "L",
+            "price": "20000"
+          },
+          {
+            "description": "XL",
+            "price": "25000"
+          },
+          {
+            "description": "XXL",
+            "price": "30000"
           }
         ]
       }
@@ -93,78 +40,9 @@
   },
   {
     "product": {
-      "name": "Hair Beauty Bath",
-      "description": "Made for your hair, a bath foam that brings your hair back to life.",
-      "price": "25.00",
-      "category_id": "categories[1].id"
-    },
-    "variant": [
-      {
-        "name": "Size",
-        "options": [
-          {
-            "description": "100ml",
-            "price": "0.00"
-          },
-          {
-            "description": "300ml",
-            "price": "18.00"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "product": {
-      "name": "Shampoo & Conditioner Set",
-      "description": "Weightless, color safe, and cleansing Verb Ghost shampoo and conditioner set.",
-      "price": "65.00",
-      "category_id": "categories[1].id"
-    },
-    "variant": [
-      {
-        "name": "Size",
-        "options": [
-          {
-            "description": "500ml kit",
-            "price": "0.00"
-          },
-          {
-            "description": "750ml kit",
-            "price": "25.00"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "product": {
-      "name": "Rose Hair & Body Oil",
-      "description": "A multitasking oil for hair and body that’s perfect for those on the go.",
-      "price": "38.00",
-      "category_id": "categories[1].id"
-    },
-    "variant": [
-      {
-        "name": "Size",
-        "options": [
-          {
-            "description": "50ml",
-            "price": "0.00"
-          },
-          {
-            "description": "75ml",
-            "price": "60.00"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "product": {
-      "name": "Complexion Cream",
-      "description": "Anti-aging complexion cream for medium to dry skin. Nourish your face with a natural vitamin burst for that perfectly balanced glow.",
-      "price": "32.00",
+      "name": "WOMEN Blus Rayon Lengan Pendek",
+      "description": "Blus yang halus dan lembut dengan siluet elegan. Dengan perawatan yang mudah setelah dicuci.",
+      "price": "299000",
       "category_id": "categories[0].id"
     },
     "variant": [
@@ -172,12 +50,20 @@
         "name": "Size",
         "options": [
           {
-            "description": "100ml",
+            "description": "S",
             "price": "0.00"
           },
           {
-            "description": "500ml",
-            "price": "57.00"
+            "description": "M",
+            "price": "10000"
+          },
+          {
+            "description": "L",
+            "price": "20000"
+          },
+          {
+            "description": "XL",
+            "price": "30000"
           }
         ]
       }
@@ -185,9 +71,9 @@
   },
   {
     "product": {
-      "name": "Eye Purity Gels",
-      "description": "Treat your skin with active pore enzymes that replenish sun damaged skin.",
-      "price": "18.00",
+      "name": "WOMEN Kemeja Linen Blend Garis Kerah Band Lengan 3/4",
+      "description": "Kemeja Wanita dengan kerah band yang terasa sejuk dan lembut. Cocok juga untuk dijadikan outer layer.",
+      "price": "399000",
       "category_id": "categories[0].id"
     },
     "variant": [
@@ -195,12 +81,174 @@
         "name": "Size",
         "options": [
           {
-            "description": "100ml",
+            "description": "S",
             "price": "0.00"
           },
           {
-            "description": "500ml",
-            "price": "32.00"
+            "description": "M",
+            "price": "10000"
+          },
+          {
+            "description": "L",
+            "price": "20000"
+          },
+          {
+            "description": "XXL",
+            "price": "30000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "product": {
+      "name": "T-Shirt Dry Warna V Neck Lengan Pendek",
+      "description": "T-shirt basic untuk Pria yang mudah dipadupadankan. Cepat kering dan nyaman dikenakan. Untuk alasan kesehatan, produk ini tidak dapat dikembalikan.",
+      "price": "99000",
+      "category_id": "categories[1].id"
+    },
+    "variant": [
+      {
+        "name": "Size",
+        "options": [
+          {
+            "description": "XS",
+            "price": "0.00"
+          },
+          {
+            "description": "S",
+            "price": "10000"
+          },
+          {
+            "description": "XL",
+            "price": "30000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "product": {
+      "name": "MEN Kemeja Broadcloth Extra Fine Cotton Garis",
+      "description": "Kemeja pria dari 100% fine cotton yang lembut. Desain versatile yang cocok untuk bisnis maupun kasual.",
+      "price": "299000",
+      "category_id": "categories[1].id"
+    },
+    "variant": [
+      {
+        "name": "Size",
+        "options": [
+          {
+            "description": "XS",
+            "price": "0.00"
+          },
+          {
+            "description": "S",
+            "price": "10000"
+          },
+          {
+            "description": "M",
+            "price": "20000"
+          },
+          {
+            "description": "L",
+            "price": "30000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "product": {
+      "name": "MEN Kemeja Extra Fine Cotton Broadcloth Kotak",
+      "description": "Kemeja Pria dari 100% premium cotton yang lembut dan nyaman. Desain yang cocok untuk kasual maupun bisnis.",
+      "price": "299000",
+      "category_id": "categories[1].id"
+    },
+    "variant": [
+      {
+        "name": "Size",
+        "options": [
+          {
+            "description": "M",
+            "price": "0.00"
+          },
+          {
+            "description": "L",
+            "price": "25000"
+          },
+          {
+            "description": "XL",
+            "price": "30000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "product": {
+      "name": "Kacamata Sports Rim Half",
+      "description": "Sunglasses yang nyaman di mata dan mampu menghalau blue light dan sinar UV. Gaya sporty yang dirancang untuk tetap di tempatnya saat Anda bergerak. Produk ini tidak dapat dikembalikan.",
+      "price": "199000",
+      "category_id": "categories[2].id"
+    },
+    "variant": [
+      {
+        "name": "Color",
+        "options": [
+          {
+            "description": "Red",
+            "price": "0.00"
+          },
+          {
+            "description": "Black",
+            "price": "0.00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "product": {
+      "name": "Tas Singlestrap",
+      "description": "Tas fungsional dengan banyak saku. Desain serbaguna yang cocok untuk berbagai kesempatan. Produk ini tidak dapat dikembalikan.",
+      "price": "299000",
+      "category_id": "categories[2].id"
+    },
+    "variant": [
+      {
+        "name": "Color",
+        "options": [
+          {
+            "description": "Blue",
+            "price": "0.00"
+          },
+          {
+            "description": "Black",
+            "price": "0.00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "product": {
+      "name": "Kacamata Round Frame Metal",
+      "description": "Sunglasses yang nyaman di mata dan mampu menghalau blue light dan sinar UV. Desain frame metal. Produk ini tidak dapat dikembalikan.",
+      "price": "199000",
+      "category_id": "categories[2].id"
+    },
+    "variant": [
+      {
+        "name": "Color",
+        "options": [
+          {
+            "description": "Black",
+            "price": "0.00"
+          },
+          {
+            "description": "Gold",
+            "price": "0.00"
           }
         ]
       }
