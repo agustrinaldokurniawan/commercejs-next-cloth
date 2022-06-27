@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import Root from '../components/common/Root';
 import Footer from '../components/common/Footer';
-import NextImg from 'next/image';
 import Link from 'next/link';
 
 const About = () => (
@@ -38,7 +37,7 @@ const About = () => (
         <div className='col-12 col-lg-6'>
           <div className='about-image h-100'>
             <div className='d-flex align-items-center justify-content-center h-100'>
-              <NextImg
+              <img
                 src='/images/home-1.jpg'
                 alt='illustration'
                 width={600}
@@ -54,7 +53,7 @@ const About = () => (
         <div className='col-12 col-lg-6'>
           <div className='about-image h-100'>
             <div className='d-flex align-items-center justify-content-center h-100'>
-              <NextImg
+              <img
                 src='/images/home-2.jpg'
                 alt='illustration'
                 width={600}
